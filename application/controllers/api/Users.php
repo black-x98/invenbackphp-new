@@ -62,6 +62,7 @@ class Users extends REST_Controller {
                 'lastname' => $this->input->post('lastname'),
                 'user_group' => $this->input->post('user_group'),
                 'phone' => $this->input->post('phone'),
+                'supervisor' => $this->input->post('supervisor'),
                 
             );
 

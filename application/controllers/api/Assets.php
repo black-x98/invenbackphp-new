@@ -35,6 +35,8 @@ class Assets extends REST_Controller {
             $tmp->availability = $value['availability'];
             $tmp->status = $value['status'];
             $tmp->request_type = $value['request_type'];
+            $tmp->req_by = $value['req_by'];
+            $tmp->supervised_by = $value['supervised_by'];
             //print_r($store_data['name']);
             //print("\n");
             array_push($result, $tmp);
@@ -66,6 +68,8 @@ class Assets extends REST_Controller {
                 'availability' => $this->input->post('availability'),
                 'request_type' => $this->input->post('request_type'),
                 'status' => $this->input->post('status'),
+                'req_by' => $this->input->post('req_by'),
+                'supervised_by' => $this->input->post('supervised_by'),
             );
 
             $create = $this->model_products->create($data);
