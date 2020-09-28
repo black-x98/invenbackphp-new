@@ -31,6 +31,7 @@ class Assets extends REST_Controller {
             $tmp->name = $value['name'];
             $tmp->price = $value['price'];;
             $tmp->quantity = $value['qty'];
+            $tmp->description = $value['description']; 
             $tmp->store_name = "dummystore";
             $tmp->availability = $value['availability'];
             $tmp->status = $value['status'];
