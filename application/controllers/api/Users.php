@@ -32,6 +32,7 @@ class Users extends REST_Controller {
             $tmp->user_group = $value['user_group'];
             $tmp->phone = $value['phone'];
             $tmp->gender = $value['gender'];
+            $tmp->supervisor = $value['supervisor'];
             //print_r($group_data);
             //$tmp->group_name = $group_data['group_name'];
             array_push($result, $tmp);
